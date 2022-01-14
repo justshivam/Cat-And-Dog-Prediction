@@ -1,6 +1,6 @@
 # Cat And Dog Prediction
 
-This project uses Transfer Learning to train a Model which classifies Cats and Dogs. The [Cat and Dog Dataset](https://www.kaggle.com/tongpython/cat-and-dog) from kaggle is used to train the model.
+This project uses Transfer Learning to train a Model which classifies Cats and Dogs. The [Cat and Dog Dataset](https://www.kaggle.com/tongpython/cat-and-dog) from kaggle is used to train the model. The Two Models used in this projects are Resnet50 and MobilenetV2. Accuracy of Resnet50 Model is 96.63%. Accuracy of MobilenetV2 Model is 73.58%.
 
 ## How to run?
 
