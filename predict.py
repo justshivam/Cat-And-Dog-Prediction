@@ -14,6 +14,10 @@ def predict_img(model, img_path):
     print(f'Prediction is: {pred_string}\nConfidence is: {max(pred[0])}')
 
 if __name__ == '__main__':
+    paths = sys.argv[1:]
+    if len(paths) == 0:
+        print('Please pass the paths as program argument.')
+        sys.exit()
     logging.getLogger('tensorflow').setLevel(logging.FATAL)
     os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
     json_file = open('resnet50.json', 'r')
@@ -22,7 +26,6 @@ if __name__ == '__main__':
     loaded_model_json = json.loads(loaded_model_json)
     model = tf.keras.models.model_from_config(loaded_model_json, custom_objects=None)
     model.load_weights('resnet50.h5')
-    paths = sys.argv[1:]
     for path in paths:
         print(path)
         predict_img(model, path)
