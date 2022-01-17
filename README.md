@@ -4,7 +4,7 @@ This project uses Transfer Learning to train a Model which classifies Cats and D
 
 ## How to run?
 
-You need python installed on your system. You can download adn install it from [here](https://www.python.org/). After installing python, follow these steps:
+You need python installed on your system. You can download and install it from [here](https://www.python.org/). After installing python, follow these steps:
 
 ### On Windows:
 
