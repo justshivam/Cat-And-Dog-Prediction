@@ -21,3 +21,8 @@ You need python installed on your system. You can download adn install it from [
 - Type `source ./venv/bin/activate` to activate the virtual environment.
 - Type `pip3 install -r requirements.txt` to install all the required dependencies.
 - Type `jupyter-lab` to run the jupyter-server.
+
+
+## How to Predict?
+
+Follow the First 4 steps from `How to run?` section. After that, use `python predict.py [.../path/to/img]` to predict the images.
